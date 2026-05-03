@@ -7,16 +7,16 @@ import { Button } from "@/components/ui/button";
 
 const projects = [
   {
-    name: "Northwind Coffee Co.",
-    category: "Hospitality • E-commerce",
+    name: "Hurt Help Heal Initiative",
+    category: "Non-Profit • Community",
     description:
-      "A warm, story-driven storefront with subscription ordering and in-store pickup for a specialty roaster.",
-    url: "https://northwindcoffee.example.com",
-    gradient: "from-amber-500/30 to-orange-700/30",
+      "A compassionate resource hub connecting individuals with counseling, support groups, and wellness programs for holistic healing.",
+    url: "https://hurthelphealinitiative.com",
+    gradient: "from-sky-500/30 to-cyan-700/30",
     services: [
       "Custom Web Design",
       "Mobile App Integration",
-      "Stripe Subscriptions",
+      "Donation Portal Setup",
       "SEO Optimization",
     ],
   },
