@@ -4,6 +4,12 @@ import { Link } from "react-router-dom";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
+import hurtHelpHealImg from "@/assets/portfolio/hurt-help-heal.png";
+import hurtHelpHealShopImg from "@/assets/portfolio/hurt-help-heal-shop.png";
+import harborHearthImg from "@/assets/portfolio/harbor-hearth.jpg";
+import pivotLegalImg from "@/assets/portfolio/pivot-legal.jpg";
+import bloomBotanicalsImg from "@/assets/portfolio/bloom-botanicals.jpg";
+import sableStoneImg from "@/assets/portfolio/sable-stone.jpg";
 
 const projects = [
   {
