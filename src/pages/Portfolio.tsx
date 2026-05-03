@@ -155,13 +155,13 @@ const Portfolio = () => {
                 }`}
               >
                 <div
-                  className={`relative aspect-[4/3] bg-gradient-to-br ${project.gradient} overflow-hidden`}
+                  className={`relative aspect-[5/4] bg-black overflow-hidden`}
                 >
                   <img
                     src={project.image}
                     alt={`${project.name} website preview`}
                     loading="lazy"
-                    className={`absolute inset-0 w-full h-full object-cover object-center transition-transform duration-500 bg-primary-foreground ${
+                    className={`absolute inset-0 w-full h-full object-cover object-center transition-transform duration-500 bg-black ${
                       isLive ? "group-hover:scale-105" : ""
                     }`}
                   />
