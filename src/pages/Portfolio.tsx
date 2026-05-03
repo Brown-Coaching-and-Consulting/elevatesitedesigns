@@ -32,7 +32,7 @@ const projects = [
     category: "Wellness • E-commerce",
     description:
       "A curated storefront offering apparel, self-care essentials, and supportive resources that fund the initiative's mission.",
-    url: "https://shop.hurthelphealinitiative.com",
+    url: "https://shop.hurthelphealinitiative.com/collections/hoodies",
     gradient: "from-rose-500/30 to-pink-700/30",
     image: hurtHelpHealShopImg,
     services: [
