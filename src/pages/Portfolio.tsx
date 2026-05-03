@@ -125,9 +125,9 @@ const Portfolio = () => {
               Back home
             </Link>
             <h1 className="font-display text-4xl md:text-6xl font-bold mb-6 leading-tight">
-              Sites we've{" "}
+              Sites We've{" "}
               <span className="bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
-                shipped
+                Designed
               </span>
             </h1>
             <p className="text-lg text-muted-foreground">
