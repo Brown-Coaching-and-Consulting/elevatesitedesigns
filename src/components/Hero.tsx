@@ -46,8 +46,8 @@ const Hero = () => {
             <Button variant="hero" size="lg" className="text-base px-8 py-6">
               View Your Site <ArrowRight className="ml-2 h-5 w-5" />
             </Button>
-            <Button variant="heroOutline" size="lg" className="text-base px-8 py-6">
-              See Our Work
+            <Button asChild variant="heroOutline" size="lg" className="text-base px-8 py-6">
+              <Link to="/portfolio">See Our Work</Link>
             </Button>
           </div>
         </motion.div>
