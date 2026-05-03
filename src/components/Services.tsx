@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Smartphone, CreditCard, PenTool, Sparkles, Search } from "lucide-react";
+import { Smartphone, CreditCard, PenTool, Sparkles, Search, Share2 } from "lucide-react";
 
 const services = [
   {
@@ -31,6 +31,12 @@ const services = [
     title: "SEO Optimization",
     description:
       "Rank higher, get found faster. We bake search engine optimization into every page we build.",
+  },
+  {
+    icon: Share2,
+    title: "Social Media Integration",
+    description:
+      "Connect your audience. We link your site with your social platforms for seamless engagement and growth.",
   },
 ];
 
