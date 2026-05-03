@@ -151,11 +151,12 @@ const Portfolio = () => {
                 <div
                   className={`relative aspect-[4/3] bg-gradient-to-br ${project.gradient} overflow-hidden`}
                 >
-                  <div className="absolute inset-0 flex items-center justify-center">
-                    <span className="font-display text-2xl font-bold text-foreground/80 px-6 text-center">
-                      {project.name}
-                    </span>
-                  </div>
+                  <img
+                    src={project.image}
+                    alt={`${project.name} website preview`}
+                    loading="lazy"
+                    className="absolute inset-0 w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-500"
+                  />
                   <div className="absolute top-4 right-4 w-10 h-10 rounded-full bg-background/70 backdrop-blur flex items-center justify-center group-hover:bg-primary group-hover:text-primary-foreground transition-colors">
                     <ArrowUpRight className="h-5 w-5" />
                   </div>
