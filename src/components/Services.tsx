@@ -22,9 +22,9 @@ const services = [
   },
   {
     icon: Sparkles,
-    title: "AI-Powered Efficiency",
+    title: "Rapid Turnaround",
     description:
-      "We use AI to bridge the gap between 'fast' and 'flawless,' delivering premium results at a fraction of the traditional agency timeline.",
+      "We bridge the gap between 'fast' and 'flawless,' delivering premium results at a fraction of the traditional agency timeline.",
   },
   {
     icon: Search,
