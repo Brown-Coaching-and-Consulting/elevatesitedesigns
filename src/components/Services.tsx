@@ -16,7 +16,7 @@ const services = [
   },
   {
     icon: PenTool,
-    title: "Business Stationery",
+    title: "Business Stationery Alignment",
     description:
       "Consistency is key. From business cards to letterheads, we align your physical brand with your digital one.",
   },
