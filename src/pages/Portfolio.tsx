@@ -6,8 +6,8 @@ import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import hurtHelpHealImg from "@/assets/portfolio/hurt-help-heal.png";
 import hurtHelpHealShopImg from "@/assets/portfolio/hurt-help-heal-shop.png";
-import harborHearthImg from "@/assets/portfolio/harbor-hearth.jpg";
-import pivotLegalImg from "@/assets/portfolio/pivot-legal.jpg";
+import barbershopImg from "@/assets/portfolio/ironclad-barbershop.jpg";
+import salonImg from "@/assets/portfolio/lumiere-salon.jpg";
 import bloomBotanicalsImg from "@/assets/portfolio/bloom-botanicals.jpg";
 import sableStoneImg from "@/assets/portfolio/sable-stone.jpg";
 
@@ -43,31 +43,31 @@ const projects = [
     ],
   },
   {
-    name: "Harbor & Hearth Realty",
-    category: "Real Estate • Lead Gen",
+    name: "Ironclad Barbershop",
+    category: "Barbershop • Booking",
     description:
-      "Property search with map view, agent directory, and integrated CRM lead capture for a coastal brokerage.",
-    url: "https://harborhearth.example.com",
-    gradient: "from-blue-500/30 to-indigo-700/30",
-    image: harborHearthImg,
+      "A premium barbershop site with online booking, service menu, and barber profiles built for a modern men's grooming brand.",
+    url: "https://ironcladbarbershop.example.com",
+    gradient: "from-amber-500/30 to-zinc-800/30",
+    image: barbershopImg,
     services: [
       "Custom Web Design",
-      "CRM Integration",
-      "AI-Powered Search",
+      "Online Booking System",
+      "Mobile App Integration",
       "SEO Optimization",
     ],
   },
   {
-    name: "Pivot Legal Group",
-    category: "Professional Services",
+    name: "Lumière Beauty Salon",
+    category: "Beauty • Booking",
     description:
-      "Editorial-style site for a boutique law firm with case study archive and consultation booking flow.",
-    url: "https://pivotlegal.example.com",
-    gradient: "from-slate-500/30 to-zinc-700/30",
-    image: pivotLegalImg,
+      "An elegant salon site featuring service menus, stylist portfolios, and seamless online appointment booking.",
+    url: "https://lumieresalon.example.com",
+    gradient: "from-rose-400/30 to-pink-600/30",
+    image: salonImg,
     services: [
-      "Brand & Web Design",
-      "Consultation Booking",
+      "Custom Web Design",
+      "Online Booking System",
       "Business Stationery",
       "SEO Optimization",
     ],
