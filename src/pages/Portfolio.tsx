@@ -13,6 +13,12 @@ const projects = [
       "A warm, story-driven storefront with subscription ordering and in-store pickup for a specialty roaster.",
     url: "https://northwindcoffee.example.com",
     gradient: "from-amber-500/30 to-orange-700/30",
+    services: [
+      "Custom Web Design",
+      "Mobile App Integration",
+      "Stripe Subscriptions",
+      "SEO Optimization",
+    ],
   },
   {
     name: "Vertex Fitness Studio",
@@ -21,6 +27,12 @@ const projects = [
       "Class scheduling, trainer profiles, and Stripe-powered memberships built for a boutique gym brand.",
     url: "https://vertexfitness.example.com",
     gradient: "from-emerald-500/30 to-teal-700/30",
+    services: [
+      "Booking System",
+      "Stripe & Apple Pay",
+      "Mobile App Integration",
+      "Business Stationery",
+    ],
   },
   {
     name: "Harbor & Hearth Realty",
@@ -29,6 +41,12 @@ const projects = [
       "Property search with map view, agent directory, and integrated CRM lead capture for a coastal brokerage.",
     url: "https://harborhearth.example.com",
     gradient: "from-blue-500/30 to-indigo-700/30",
+    services: [
+      "Custom Web Design",
+      "CRM Integration",
+      "AI-Powered Search",
+      "SEO Optimization",
+    ],
   },
   {
     name: "Pivot Legal Group",
@@ -37,6 +55,12 @@ const projects = [
       "Editorial-style site for a boutique law firm with case study archive and consultation booking flow.",
     url: "https://pivotlegal.example.com",
     gradient: "from-slate-500/30 to-zinc-700/30",
+    services: [
+      "Brand & Web Design",
+      "Consultation Booking",
+      "Business Stationery",
+      "SEO Optimization",
+    ],
   },
   {
     name: "Bloom Botanicals",
@@ -45,6 +69,12 @@ const projects = [
       "A vibrant DTC plant shop with custom Shopify theme, AR plant preview, and Apple Pay checkout.",
     url: "https://bloombotanicals.example.com",
     gradient: "from-fuchsia-500/30 to-rose-700/30",
+    services: [
+      "Shopify Theme",
+      "PayPal & Apple Pay",
+      "Mobile App Integration",
+      "AI Product Recommendations",
+    ],
   },
   {
     name: "Sable & Stone Architects",
@@ -53,6 +83,12 @@ const projects = [
       "Minimalist, image-forward portfolio with case study deep-dives and press archive for a design studio.",
     url: "https://sablestone.example.com",
     gradient: "from-stone-500/30 to-neutral-700/30",
+    services: [
+      "Portfolio Web Design",
+      "CMS Setup",
+      "Business Stationery",
+      "SEO Optimization",
+    ],
   },
 ];
 
