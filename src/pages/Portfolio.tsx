@@ -200,7 +200,8 @@ const Portfolio = () => {
                   </div>
                 </div>
               </motion.a>
-            ))}
+              );
+            })}
           </div>
 
           <div className="mt-20 text-center">
