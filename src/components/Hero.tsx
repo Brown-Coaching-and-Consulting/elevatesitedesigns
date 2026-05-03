@@ -31,9 +31,9 @@ const Hero = () => {
           </motion.div>
 
           <h1 className="font-display text-5xl md:text-7xl font-bold leading-tight tracking-tight mb-6">
-            We Build Your Website{" "}
+            We Built Your Website{" "}
             <span className="bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
-              For Free
+              For You
             </span>
           </h1>
 
