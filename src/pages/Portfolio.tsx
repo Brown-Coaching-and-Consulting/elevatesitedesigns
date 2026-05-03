@@ -154,9 +154,25 @@ const Portfolio = () => {
                     {project.category}
                   </p>
                   <h3 className="font-display text-xl font-semibold mb-2">{project.name}</h3>
-                  <p className="text-sm text-muted-foreground leading-relaxed">
+                  <p className="text-sm text-muted-foreground leading-relaxed mb-4">
                     {project.description}
                   </p>
+
+                  <div className="pt-4 border-t border-border">
+                    <p className="text-xs uppercase tracking-wider text-muted-foreground mb-3">
+                      Services Provided
+                    </p>
+                    <div className="flex flex-wrap gap-2">
+                      {project.services.map((service) => (
+                        <span
+                          key={service}
+                          className="text-xs px-2.5 py-1 rounded-full bg-secondary text-secondary-foreground border border-border"
+                        >
+                          {service}
+                        </span>
+                      ))}
+                    </div>
+                  </div>
                 </div>
               </motion.a>
             ))}
