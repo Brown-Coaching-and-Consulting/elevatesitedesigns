@@ -27,7 +27,7 @@ const Hero = () => {
             transition={{ delay: 0.2, duration: 0.5 }}
             className="inline-block mb-6 px-4 py-1.5 rounded-full border border-primary/30 bg-primary/5 text-sm text-primary font-medium"
           >
-            Don't Like It - Do Buy It
+            Don't Like It - Don't Buy It
           </motion.div>
 
           <h1 className="font-display text-5xl md:text-7xl font-bold leading-tight tracking-tight mb-6">
