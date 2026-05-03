@@ -21,17 +21,17 @@ const projects = [
     ],
   },
   {
-    name: "Vertex Fitness Studio",
-    category: "Fitness • Booking",
+    name: "Hurt Help Heal Shop",
+    category: "Wellness • E-commerce",
     description:
-      "Class scheduling, trainer profiles, and Stripe-powered memberships built for a boutique gym brand.",
-    url: "https://vertexfitness.example.com",
-    gradient: "from-emerald-500/30 to-teal-700/30",
+      "A curated storefront offering apparel, self-care essentials, and supportive resources that fund the initiative's mission.",
+    url: "https://shop.hurthelphealinitiative.com",
+    gradient: "from-rose-500/30 to-pink-700/30",
     services: [
-      "Booking System",
-      "Stripe & Apple Pay",
+      "E-commerce Store",
+      "Stripe & PayPal Checkout",
       "Mobile App Integration",
-      "Business Stationery",
+      "Order Fulfillment Setup",
     ],
   },
   {
