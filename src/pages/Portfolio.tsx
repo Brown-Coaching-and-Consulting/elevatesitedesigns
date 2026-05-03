@@ -19,6 +19,7 @@ const projects = [
       "A compassionate resource hub connecting individuals with counseling, support groups, and wellness programs for holistic healing.",
     url: "https://hurthelphealinitiative.com",
     gradient: "from-sky-500/30 to-cyan-700/30",
+    image: hurtHelpHealImg,
     services: [
       "Custom Web Design",
       "Mobile App Integration",
@@ -33,6 +34,7 @@ const projects = [
       "A curated storefront offering apparel, self-care essentials, and supportive resources that fund the initiative's mission.",
     url: "https://shop.hurthelphealinitiative.com",
     gradient: "from-rose-500/30 to-pink-700/30",
+    image: hurtHelpHealShopImg,
     services: [
       "E-commerce Store",
       "Stripe & PayPal Checkout",
@@ -47,6 +49,7 @@ const projects = [
       "Property search with map view, agent directory, and integrated CRM lead capture for a coastal brokerage.",
     url: "https://harborhearth.example.com",
     gradient: "from-blue-500/30 to-indigo-700/30",
+    image: harborHearthImg,
     services: [
       "Custom Web Design",
       "CRM Integration",
@@ -61,6 +64,7 @@ const projects = [
       "Editorial-style site for a boutique law firm with case study archive and consultation booking flow.",
     url: "https://pivotlegal.example.com",
     gradient: "from-slate-500/30 to-zinc-700/30",
+    image: pivotLegalImg,
     services: [
       "Brand & Web Design",
       "Consultation Booking",
@@ -75,6 +79,7 @@ const projects = [
       "A vibrant DTC plant shop with custom Shopify theme, AR plant preview, and Apple Pay checkout.",
     url: "https://bloombotanicals.example.com",
     gradient: "from-fuchsia-500/30 to-rose-700/30",
+    image: bloomBotanicalsImg,
     services: [
       "Shopify Theme",
       "PayPal & Apple Pay",
@@ -89,6 +94,7 @@ const projects = [
       "Minimalist, image-forward portfolio with case study deep-dives and press archive for a design studio.",
     url: "https://sablestone.example.com",
     gradient: "from-stone-500/30 to-neutral-700/30",
+    image: sableStoneImg,
     services: [
       "Portfolio Web Design",
       "CMS Setup",
