@@ -161,7 +161,7 @@ const Portfolio = () => {
                     src={project.image}
                     alt={`${project.name} website preview`}
                     loading="lazy"
-                    className={`absolute inset-0 w-full h-full object-fill transition-transform duration-500 ${
+                    className={`absolute inset-0 w-full h-full object-cover object-center transition-transform duration-500 bg-primary-foreground ${
                       isLive ? "group-hover:scale-105" : ""
                     }`}
                   />
