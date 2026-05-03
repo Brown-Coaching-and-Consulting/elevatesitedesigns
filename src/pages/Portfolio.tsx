@@ -137,16 +137,22 @@ const Portfolio = () => {
           </motion.div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl">
-            {projects.map((project, i) => (
+            {projects.map((project, i) => {
+              const isLive = !project.url.includes("example.com");
+              const linkProps = isLive
+                ? { href: project.url, target: "_blank", rel: "noopener noreferrer" }
+                : { onClick: (e: React.MouseEvent) => e.preventDefault() };
+              return (
               <motion.a
                 key={project.name}
-                href={project.url}
-                target="_blank"
-                rel="noopener noreferrer"
+                {...linkProps}
+                aria-disabled={!isLive}
                 initial={{ opacity: 0, y: 30 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: i * 0.08 }}
-                className="group relative rounded-xl border border-border bg-card overflow-hidden hover:border-primary/40 transition-colors duration-300"
+                className={`group relative rounded-xl border border-border bg-card overflow-hidden transition-colors duration-300 ${
+                  isLive ? "hover:border-primary/40 cursor-pointer" : "cursor-default"
+                }`}
               >
                 <div
                   className={`relative aspect-[4/3] bg-gradient-to-br ${project.gradient} overflow-hidden`}
@@ -155,9 +161,15 @@ const Portfolio = () => {
                     src={project.image}
                     alt={`${project.name} website preview`}
                     loading="lazy"
-                    className="absolute inset-0 w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-500"
+                    className={`absolute inset-0 w-full h-full object-cover object-top transition-transform duration-500 ${
+                      isLive ? "group-hover:scale-105" : ""
+                    }`}
                   />
-                  <div className="absolute top-4 right-4 w-10 h-10 rounded-full bg-background/70 backdrop-blur flex items-center justify-center group-hover:bg-primary group-hover:text-primary-foreground transition-colors">
+                  <div
+                    className={`absolute top-4 right-4 w-10 h-10 rounded-full bg-background/70 backdrop-blur flex items-center justify-center transition-colors ${
+                      isLive ? "group-hover:bg-primary group-hover:text-primary-foreground" : ""
+                    }`}
+                  >
                     <ArrowUpRight className="h-5 w-5" />
                   </div>
                 </div>
@@ -188,7 +200,8 @@ const Portfolio = () => {
                   </div>
                 </div>
               </motion.a>
-            ))}
+              );
+            })}
           </div>
 
           <div className="mt-20 text-center">
