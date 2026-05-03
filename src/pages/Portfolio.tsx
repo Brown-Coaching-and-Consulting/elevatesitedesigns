@@ -9,7 +9,7 @@ import hurtHelpHealShopImg from "@/assets/portfolio/hurt-help-heal-shop.png";
 import barbershopImg from "@/assets/portfolio/ironclad-barbershop.jpg";
 import salonImg from "@/assets/portfolio/lumiere-salon.jpg";
 import bloomBotanicalsImg from "@/assets/portfolio/bloom-botanicals.jpg";
-import sableStoneImg from "@/assets/portfolio/sable-stone.jpg";
+import soulFusionImg from "@/assets/portfolio/soul-fusion-catering.jpg";
 
 const projects = [
   {
@@ -88,17 +88,17 @@ const projects = [
     ],
   },
   {
-    name: "Sable & Stone Architects",
-    category: "Architecture • Portfolio",
+    name: "Soul Fusion Catering",
+    category: "Catering • Events",
     description:
-      "Minimalist, image-forward portfolio with case study deep-dives and press archive for a design studio.",
-    url: "https://sablestone.example.com",
-    gradient: "from-stone-500/30 to-neutral-700/30",
-    image: sableStoneImg,
+      "A flavorful catering site blending soul food classics with Asian-inspired flavors — featuring menus, event booking, and a gallery of catered events.",
+    url: "https://soulfusioncatering.example.com",
+    gradient: "from-red-500/30 to-amber-700/30",
+    image: soulFusionImg,
     services: [
-      "Portfolio Web Design",
-      "CMS Setup",
-      "Business Stationery",
+      "Custom Web Design",
+      "Event Booking System",
+      "Online Menu & Gallery",
       "SEO Optimization",
     ],
   },
