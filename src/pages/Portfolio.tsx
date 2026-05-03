@@ -17,7 +17,7 @@ const projects = [
     category: "Non-Profit • Community",
     description:
       "A compassionate resource hub connecting individuals with counseling, support groups, and wellness programs for holistic healing.",
-    url: "https://hurthelphealinitiative.com",
+    url: "https://hurthelphealinitiative.com/resources/",
     gradient: "from-sky-500/30 to-cyan-700/30",
     image: hurtHelpHealImg,
     services: [
