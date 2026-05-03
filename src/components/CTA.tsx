@@ -29,7 +29,7 @@ const CTA = () => {
             Your competitors are already online. Let us build you a stunning, professional website — completely free.
           </p>
           <Button variant="hero" size="lg" className="text-base px-10 py-6">
-            Start Your Free Project <ArrowRight className="ml-2 h-5 w-5" />
+            Free Project Consultation <ArrowRight className="ml-2 h-5 w-5" />
           </Button>
         </motion.div>
       </div>
