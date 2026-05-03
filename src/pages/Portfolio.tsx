@@ -88,10 +88,10 @@ const projects = [
     ],
   },
   {
-    name: "Soul Fusion Catering",
+    name: "Soul Bound Catering",
     category: "Catering • Events",
     description:
-      "A flavorful catering site blending soul food classics with Asian-inspired flavors — featuring menus, event booking, and a gallery of catered events.",
+      "A soul food catering site celebrating classic Southern flavors — featuring menus, event booking, and a gallery of catered events.",
     url: "https://soulfusioncatering.example.com",
     gradient: "from-red-500/30 to-amber-700/30",
     image: soulFusionImg,
