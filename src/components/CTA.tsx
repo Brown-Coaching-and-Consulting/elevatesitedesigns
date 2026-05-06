@@ -11,12 +11,18 @@ import { ArrowRight, Mail } from "lucide-react";
 const contactSchema = z.object({
   name: z.string().trim().min(1, "Please enter your name").max(100),
   email: z.string().trim().email("Please enter a valid email").max(255),
+  phone: z
+    .string()
+    .trim()
+    .min(7, "Please enter a valid phone number")
+    .max(20, "Phone number is too long")
+    .regex(/^[+()\-\s\d]+$/, "Phone can only contain digits, spaces, +, -, ()"),
   message: z.string().trim().min(10, "Tell us a bit more about your project").max(1000),
 });
 
 const CTA = () => {
   const { toast } = useToast();
-  const [form, setForm] = useState({ name: "", email: "", message: "" });
+  const [form, setForm] = useState({ name: "", email: "", phone: "", message: "" });
   const [submitting, setSubmitting] = useState(false);
 
   const handleSubmit = (e: React.FormEvent) => {
@@ -32,7 +38,9 @@ const CTA = () => {
     }
     setSubmitting(true);
     const subject = encodeURIComponent(`New project inquiry from ${result.data.name}`);
-    const body = encodeURIComponent(`${result.data.message}\n\n— ${result.data.name} (${result.data.email})`);
+    const body = encodeURIComponent(
+      `${result.data.message}\n\n— ${result.data.name}\nEmail: ${result.data.email}\nPhone: ${result.data.phone}`,
+    );
     window.location.href = `mailto:hello@elevatesitedesigns.com?subject=${subject}&body=${body}`;
     setTimeout(() => {
       setSubmitting(false);
@@ -95,6 +103,18 @@ const CTA = () => {
               onChange={(e) => setForm({ ...form, email: e.target.value })}
               placeholder="you@example.com"
               maxLength={255}
+              required
+            />
+          </div>
+          <div className="space-y-2">
+            <Label htmlFor="phone">Phone</Label>
+            <Input
+              id="phone"
+              type="tel"
+              value={form.phone}
+              onChange={(e) => setForm({ ...form, phone: e.target.value })}
+              placeholder="(555) 123-4567"
+              maxLength={20}
               required
             />
           </div>
