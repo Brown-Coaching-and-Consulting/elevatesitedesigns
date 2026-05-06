@@ -93,7 +93,7 @@ const CTA = () => {
     formData.append("entry.839337160", d.hasWebsite === "yes" ? "Yes" : "No");
     formData.append("entry.622333211", d.siteType);
     formData.append("entry.831336362", d.brandColors);
-    formData.append("entry.320888362", d.features || "");
+    formData.append("entry.320888362", d.features?.trim() || "N/A");
     formData.append("entry.332738351", d.hasSocial === "yes" ? "Yes" : "No");
     formData.append("entry.1547642650", d.hasSocial === "yes" ? (d.socialPage || "") : "");
 
