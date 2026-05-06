@@ -289,7 +289,7 @@ const CTA = () => {
 
           {form.hasSocial === "yes" && (
             <div className="space-y-2">
-              <Label htmlFor="socialPage">What is your social media business page?</Label>
+              <Label htmlFor="socialPage">If yes, which business pages would you like to integrate?</Label>
               <Input
                 id="socialPage"
                 value={form.socialPage}
