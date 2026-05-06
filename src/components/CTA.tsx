@@ -83,11 +83,6 @@ const CTA = () => {
     setSubmitting(true);
     const d = result.data;
 
-    // Push submission into Google Form (which feeds the lead sheet)
-    const featuresWithSocial = d.hasSocial === "yes" && d.socialPage
-      ? `${d.features || ""}${d.features ? "\n\n" : ""}Social page: ${d.socialPage}`
-      : d.features || "";
-
     const formData = new FormData();
     formData.append("entry.2005620554", d.name);
     formData.append("entry.1712904405", d.businessName);
@@ -97,8 +92,9 @@ const CTA = () => {
     formData.append("entry.839337160", d.hasWebsite === "yes" ? "Yes" : "No");
     formData.append("entry.622333211", d.siteType);
     formData.append("entry.831336362", d.brandColors);
-    formData.append("entry.320888362", featuresWithSocial);
+    formData.append("entry.320888362", d.features || "");
     formData.append("entry.332738351", d.hasSocial === "yes" ? "Yes" : "No");
+    formData.append("entry.1547642650", d.hasSocial === "yes" ? (d.socialPage || "") : "");
 
     try {
       await fetch(
