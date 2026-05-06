@@ -289,12 +289,12 @@ const CTA = () => {
 
           {form.hasSocial === "yes" && (
             <div className="space-y-2">
-              <Label htmlFor="socialPage">What is your social media business page?</Label>
+              <Label htmlFor="socialPage">If yes, which business pages would you like to integrate?</Label>
               <Input
                 id="socialPage"
                 value={form.socialPage}
                 onChange={(e) => update("socialPage", e.target.value)}
-                placeholder="https://instagram.com/yourbusiness"
+                placeholder="e.g. TikTok, Facebook, YouTube, Instagram"
                 maxLength={300}
                 required
               />
