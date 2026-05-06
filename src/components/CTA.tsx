@@ -283,19 +283,16 @@ const CTA = () => {
             </RadioGroup>
           </div>
 
-          {form.hasSocial === "yes" && (
-            <div className="space-y-2">
-              <Label htmlFor="socialPage">If yes, which business pages would you like to integrate?</Label>
-              <Input
-                id="socialPage"
-                value={form.socialPage}
-                onChange={(e) => update("socialPage", e.target.value)}
-                placeholder="e.g. TikTok, Facebook, YouTube, Instagram"
-                maxLength={300}
-                required
-              />
-            </div>
-          )}
+          <div className="space-y-2">
+            <Label htmlFor="socialPage">If yes, which business pages would you like to integrate?</Label>
+            <Input
+              id="socialPage"
+              value={form.socialPage}
+              onChange={(e) => update("socialPage", e.target.value)}
+              placeholder="e.g. TikTok, Facebook, YouTube, Instagram"
+              maxLength={300}
+            />
+          </div>
 
           <Button
             type="submit"
