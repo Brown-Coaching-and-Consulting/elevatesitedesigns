@@ -100,11 +100,21 @@ const CTA = () => {
         `Social page: ${d.socialPage || "—"}`,
       ].join("\n"),
     );
-    window.location.href = `mailto:hello@elevatesitedesigns.com?subject=${subject}&body=${body}`;
-    setTimeout(() => {
-      setSubmitting(false);
-      toast({ title: "Thanks!", description: "Your email client should open shortly." });
-    }, 600);
+    // Silently open the user's email client to deliver the request
+    const mailtoLink = `mailto:hello@elevatesitedesigns.com?subject=${subject}&body=${body}`;
+    const iframe = document.createElement("iframe");
+    iframe.style.display = "none";
+    iframe.src = mailtoLink;
+    document.body.appendChild(iframe);
+    setTimeout(() => iframe.remove(), 1000);
+
+    toast({
+      title: "Consultation request received",
+      description:
+        "We have received your request for consultation and your site designer will contact you today. Thank you.",
+    });
+    setForm(initialForm);
+    setSubmitting(false);
   };
 
   return (
