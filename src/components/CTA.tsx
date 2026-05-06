@@ -24,7 +24,7 @@ const contactSchema = z
     hasWebsite: z.enum(["yes", "no"], { required_error: "Please select yes or no" }),
     siteType: z.string().trim().min(1, "Please tell us what kind of site you need").max(300),
     brandColors: z.string().trim().min(1, "Please share your brand colors (or 'none')").max(200),
-    features: z.string().trim().max(1000).optional().or(z.literal("")),
+    features: z.string().trim().min(1, "Please share any features in mind").max(1000),
     hasSocial: z.enum(["yes", "no"], { required_error: "Please select yes or no" }),
     socialPage: z.string().trim().max(300).optional().or(z.literal("")),
   })
@@ -263,6 +263,7 @@ const CTA = () => {
               placeholder="Online payments, booking system, blog, contact forms, etc."
               rows={3}
               maxLength={1000}
+              required
             />
           </div>
 
