@@ -310,13 +310,6 @@ const CTA = () => {
             {submitting ? "Sending..." : "Free Project Consultation"}
             <ArrowRight className="ml-2 h-5 w-5" />
           </Button>
-          <p className="flex items-center justify-center gap-2 text-sm text-muted-foreground">
-            <Mail className="h-4 w-4" />
-            Or email us at{" "}
-            <a href="mailto:hello@elevatesitedesigns.com" className="text-primary hover:underline">
-              hello@elevatesitedesigns.com
-            </a>
-          </p>
         </motion.form>
       </div>
     </section>
