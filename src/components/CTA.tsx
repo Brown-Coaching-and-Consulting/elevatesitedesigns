@@ -107,6 +107,18 @@ const CTA = () => {
             />
           </div>
           <div className="space-y-2">
+            <Label htmlFor="phone">Phone</Label>
+            <Input
+              id="phone"
+              type="tel"
+              value={form.phone}
+              onChange={(e) => setForm({ ...form, phone: e.target.value })}
+              placeholder="(555) 123-4567"
+              maxLength={20}
+              required
+            />
+          </div>
+          <div className="space-y-2">
             <Label htmlFor="message">Project details</Label>
             <Textarea
               id="message"
