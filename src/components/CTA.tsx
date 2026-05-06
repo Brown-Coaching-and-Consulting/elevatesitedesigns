@@ -38,7 +38,9 @@ const CTA = () => {
     }
     setSubmitting(true);
     const subject = encodeURIComponent(`New project inquiry from ${result.data.name}`);
-    const body = encodeURIComponent(`${result.data.message}\n\n— ${result.data.name} (${result.data.email})`);
+    const body = encodeURIComponent(
+      `${result.data.message}\n\n— ${result.data.name}\nEmail: ${result.data.email}\nPhone: ${result.data.phone}`,
+    );
     window.location.href = `mailto:hello@elevatesitedesigns.com?subject=${subject}&body=${body}`;
     setTimeout(() => {
       setSubmitting(false);
