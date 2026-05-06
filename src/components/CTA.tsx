@@ -84,6 +84,7 @@ const CTA = () => {
     const d = result.data;
 
     const formData = new FormData();
+    formData.append("emailAddress", d.email);
     formData.append("entry.2005620554", d.name);
     formData.append("entry.1712904405", d.businessName);
     formData.append("entry.1045781291", d.email);
