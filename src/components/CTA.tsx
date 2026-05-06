@@ -69,7 +69,7 @@ const CTA = () => {
   const update = <K extends keyof FormState>(key: K, value: FormState[K]) =>
     setForm((f) => ({ ...f, [key]: value }));
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     const result = contactSchema.safeParse(form);
     if (!result.success) {
@@ -82,31 +82,32 @@ const CTA = () => {
     }
     setSubmitting(true);
     const d = result.data;
-    const subject = encodeURIComponent(`New project inquiry from ${d.name} (${d.businessName})`);
-    const body = encodeURIComponent(
-      [
-        `Name: ${d.name}`,
-        `Business: ${d.businessName}`,
-        `City: ${d.city}`,
-        `Phone: ${d.phone}`,
-        `Email: ${d.email}`,
-        `Has website already: ${d.hasWebsite}`,
-        ``,
-        `Project details / site type: ${d.siteType}`,
-        `Brand colors: ${d.brandColors}`,
-        `Features in mind: ${d.features || "—"}`,
-        ``,
-        `Social media to integrate: ${d.hasSocial}`,
-        `Social page: ${d.socialPage || "—"}`,
-      ].join("\n"),
-    );
-    // Silently open the user's email client to deliver the request
-    const mailtoLink = `mailto:hello@elevatesitedesigns.com?subject=${subject}&body=${body}`;
-    const iframe = document.createElement("iframe");
-    iframe.style.display = "none";
-    iframe.src = mailtoLink;
-    document.body.appendChild(iframe);
-    setTimeout(() => iframe.remove(), 1000);
+
+    // Push submission into Google Form (which feeds the lead sheet)
+    const featuresWithSocial = d.hasSocial === "yes" && d.socialPage
+      ? `${d.features || ""}${d.features ? "\n\n" : ""}Social page: ${d.socialPage}`
+      : d.features || "";
+
+    const formData = new FormData();
+    formData.append("entry.2005620554", d.name);
+    formData.append("entry.1712904405", d.businessName);
+    formData.append("entry.1045781291", d.email);
+    formData.append("entry.1065046570", d.city);
+    formData.append("entry.1166974658", d.phone);
+    formData.append("entry.839337160", d.hasWebsite === "yes" ? "Yes" : "No");
+    formData.append("entry.622333211", d.siteType);
+    formData.append("entry.831336362", d.brandColors);
+    formData.append("entry.320888362", featuresWithSocial);
+    formData.append("entry.332738351", d.hasSocial === "yes" ? "Yes" : "No");
+
+    try {
+      await fetch(
+        "https://docs.google.com/forms/d/e/1FAIpQLSduBarbW_2MBJdvsAjuCzXgRu59J2JsiymsvMiVICE9aAZM4Q/formResponse",
+        { method: "POST", mode: "no-cors", body: formData },
+      );
+    } catch {
+      // no-cors swallows response; ignore network errors so UX stays smooth
+    }
 
     toast({
       title: "Consultation request received",
