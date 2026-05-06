@@ -294,7 +294,7 @@ const CTA = () => {
                 id="socialPage"
                 value={form.socialPage}
                 onChange={(e) => update("socialPage", e.target.value)}
-                placeholder="https://instagram.com/yourbusiness"
+                placeholder="e.g. TikTok, Facebook, YouTube, Instagram"
                 maxLength={300}
                 required
               />
