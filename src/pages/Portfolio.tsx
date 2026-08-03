@@ -7,9 +7,8 @@ import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import hurtHelpHealImg from "@/assets/portfolio/hurt-help-heal.png";
 import hurtHelpHealShopImg from "@/assets/portfolio/hurt-help-heal-shop.png";
-import barbershopImg from "@/assets/portfolio/ironclad-barbershop.jpg";
-import salonImg from "@/assets/portfolio/lumiere-salon.jpg";
 import bloomBotanicalsImg from "@/assets/portfolio/bloom-botanicals.jpg";
+import { BarbershopMockup, SalonMockup } from "@/components/portfolio/SiteMockup";
 
 
 const projects = [
@@ -50,7 +49,7 @@ const projects = [
       "A premium barbershop site with online booking, service menu, and barber profiles built for a modern men's grooming brand.",
     url: "https://ironcladbarbershop.example.com",
     gradient: "from-amber-500/30 to-zinc-800/30",
-    image: barbershopImg,
+    mockup: "barbershop" as const,
     services: [
       "Custom Web Design",
       "Online Booking System",
@@ -65,7 +64,7 @@ const projects = [
       "An elegant salon site featuring service menus, stylist portfolios, and seamless online appointment booking.",
     url: "https://lumieresalon.example.com",
     gradient: "from-rose-400/30 to-pink-600/30",
-    image: salonImg,
+    mockup: "salon" as const,
     services: [
       "Custom Web Design",
       "Online Booking System",
@@ -163,16 +162,36 @@ const Portfolio = () => {
                     project.gradient ? `bg-gradient-to-br ${project.gradient}` : "bg-white"
                   }`}
                 >
-                  <img
-                    src={project.image}
-                    alt={`${project.name} website preview`}
-                    loading="lazy"
-                    className={`absolute inset-0 w-full h-full ${
-                      project.imageFit === "contain" ? "object-contain" : "object-cover object-top"
-                    } transition-transform duration-500 ${
-                      isLive ? "group-hover:scale-105" : ""
-                    }`}
-                  />
+                  {project.mockup === "barbershop" && (
+                    <div
+                      className={`absolute inset-0 transition-transform duration-500 ${
+                        isLive ? "group-hover:scale-105" : ""
+                      }`}
+                    >
+                      <BarbershopMockup />
+                    </div>
+                  )}
+                  {project.mockup === "salon" && (
+                    <div
+                      className={`absolute inset-0 transition-transform duration-500 ${
+                        isLive ? "group-hover:scale-105" : ""
+                      }`}
+                    >
+                      <SalonMockup />
+                    </div>
+                  )}
+                  {project.image && (
+                    <img
+                      src={project.image}
+                      alt={`${project.name} website preview`}
+                      loading="lazy"
+                      className={`absolute inset-0 w-full h-full ${
+                        project.imageFit === "contain" ? "object-contain" : "object-cover object-top"
+                      } transition-transform duration-500 ${
+                        isLive ? "group-hover:scale-105" : ""
+                      }`}
+                    />
+                  )}
                   <div
                     className={`absolute top-4 right-4 w-10 h-10 rounded-full bg-background/70 backdrop-blur flex items-center justify-center transition-colors ${
                       isLive ? "group-hover:bg-primary group-hover:text-primary-foreground" : ""
