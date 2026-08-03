@@ -1,4 +1,4 @@
-import { motion } from "framer-motion";
+import nevaMealsImg from "@/assets/portfolio/neva-meals.jpg";
 import { ArrowUpRight, ArrowLeft } from "lucide-react";
 import { Link } from "react-router-dom";
 import Navbar from "@/components/Navbar";
@@ -9,7 +9,7 @@ import hurtHelpHealShopImg from "@/assets/portfolio/hurt-help-heal-shop.png";
 import barbershopImg from "@/assets/portfolio/ironclad-barbershop.jpg";
 import salonImg from "@/assets/portfolio/lumiere-salon.jpg";
 import bloomBotanicalsImg from "@/assets/portfolio/bloom-botanicals.jpg";
-import soulFusionImg from "@/assets/portfolio/soul-fusion-catering.jpg";
+
 
 const projects = [
   {
@@ -88,17 +88,17 @@ const projects = [
     ],
   },
   {
-    name: "Soul Bound Catering",
+    name: "Neva Meals",
     category: "Catering • Events",
     description:
-      "A soul food catering site celebrating classic Southern flavors — featuring menus, event booking, and a gallery of catered events.",
-    url: "https://soulfusioncatering.example.com",
-    gradient: "from-red-500/30 to-amber-700/30",
-    image: soulFusionImg,
+      "A full-service catering and private chef experience by Chef Geneva Jeanty, featuring bold Haitian & Caribbean flavor for intimate dinners, weddings, corporate events, and wellness pop-ups.",
+    url: "https://nevameals.com",
+    gradient: "from-amber-500/30 to-indigo-900/30",
+    image: nevaMealsImg,
     services: [
       "Custom Web Design",
-      "Event Booking System",
-      "Online Menu & Gallery",
+      "Online Booking System",
+      "Brand Identity",
       "SEO Optimization",
     ],
   },
