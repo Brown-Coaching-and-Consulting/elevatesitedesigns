@@ -9,7 +9,7 @@ import hurtHelpHealShopImg from "@/assets/portfolio/hurt-help-heal-shop.png";
 import barbershopImg from "@/assets/portfolio/ironclad-barbershop.jpg";
 import salonImg from "@/assets/portfolio/lumiere-salon.jpg";
 import bloomBotanicalsImg from "@/assets/portfolio/bloom-botanicals.jpg";
-import soulFusionImg from "@/assets/portfolio/soul-fusion-catering.jpg";
+
 
 const projects = [
   {
