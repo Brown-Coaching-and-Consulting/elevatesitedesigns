@@ -1,3 +1,4 @@
+import { motion } from "framer-motion";
 import nevaMealsImg from "@/assets/portfolio/neva-meals.jpg";
 import { ArrowUpRight, ArrowLeft } from "lucide-react";
 import { Link } from "react-router-dom";
