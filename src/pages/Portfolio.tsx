@@ -74,18 +74,18 @@ const projects = [
     ],
   },
   {
-    name: "Bloom Botanicals",
-    category: "Retail • Shopify",
+    name: "Brown Coaching & Consulting",
+    category: "Coaching • Consulting",
     description:
-      "A vibrant DTC plant shop with custom Shopify theme, AR plant preview, and Apple Pay checkout.",
-    url: "https://bloombotanicals.example.com",
-    gradient: "from-fuchsia-500/30 to-rose-700/30",
+      "A clarity-driven coaching and consulting site guiding individuals from drifting to driven, with strategy support for organizations ready to do more.",
+    url: "https://browncoachingandconsulting.com",
+    gradient: "from-amber-600/30 to-slate-900/30",
     image: bloomBotanicalsImg,
     services: [
-      "Shopify Theme",
-      "PayPal & Apple Pay",
-      "Mobile App Integration",
-      "AI Product Recommendations",
+      "Custom Web Design",
+      "Booking Integration",
+      "Brand Identity",
+      "SEO Optimization",
     ],
   },
   {
