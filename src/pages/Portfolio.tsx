@@ -94,8 +94,9 @@ const projects = [
     description:
       "A full-service catering and private chef experience by Chef Geneva Jeanty, featuring bold Haitian & Caribbean flavor for intimate dinners, weddings, corporate events, and wellness pop-ups.",
     url: "https://nevameals.com",
-    gradient: "from-amber-500/30 to-indigo-900/30",
+    gradient: "",
     image: nevaMealsImg,
+    imageFit: "contain",
     services: [
       "Custom Web Design",
       "Online Booking System",
@@ -151,18 +152,24 @@ const Portfolio = () => {
                 initial={{ opacity: 0, y: 30 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: i * 0.08 }}
-                className={`group relative rounded-xl border border-border bg-card overflow-hidden transition-colors duration-300 ${
+                className={`group relative rounded-xl border ${
+                  project.gradient ? "border-border" : "border-white"
+                } bg-card overflow-hidden transition-colors duration-300 ${
                   isLive ? "hover:border-primary/40 cursor-pointer" : "cursor-default"
                 }`}
               >
                 <div
-                  className={`relative aspect-[4/3] bg-gradient-to-br ${project.gradient} overflow-hidden`}
+                  className={`relative aspect-[4/3] overflow-hidden ${
+                    project.gradient ? `bg-gradient-to-br ${project.gradient}` : "bg-white"
+                  }`}
                 >
                   <img
                     src={project.image}
                     alt={`${project.name} website preview`}
                     loading="lazy"
-                    className={`absolute inset-0 w-full h-full object-cover object-top transition-transform duration-500 ${
+                    className={`absolute inset-0 w-full h-full ${
+                      project.imageFit === "contain" ? "object-contain" : "object-cover object-top"
+                    } transition-transform duration-500 ${
                       isLive ? "group-hover:scale-105" : ""
                     }`}
                   />
