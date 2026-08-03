@@ -7,8 +7,8 @@ import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import hurtHelpHealImg from "@/assets/portfolio/hurt-help-heal.png";
 import hurtHelpHealShopImg from "@/assets/portfolio/hurt-help-heal-shop.png";
-import barbershopImg from "@/assets/portfolio/ironclad-barbershop.jpg";
-import salonImg from "@/assets/portfolio/lumiere-salon.jpg";
+import barbershopImg from "@/assets/portfolio/ironclad-barbershop.png";
+import salonImg from "@/assets/portfolio/lumiere-salon.png";
 import brownCoachingImg from "@/assets/portfolio/brown-coaching-consulting.png";
 
 
