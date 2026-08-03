@@ -9,7 +9,7 @@ import hurtHelpHealImg from "@/assets/portfolio/hurt-help-heal.png";
 import hurtHelpHealShopImg from "@/assets/portfolio/hurt-help-heal-shop.png";
 import barbershopImg from "@/assets/portfolio/ironclad-barbershop.jpg";
 import salonImg from "@/assets/portfolio/lumiere-salon.jpg";
-import bloomBotanicalsImg from "@/assets/portfolio/bloom-botanicals.jpg";
+import brownCoachingImg from "@/assets/portfolio/brown-coaching-consulting.png";
 
 
 const projects = [
@@ -80,7 +80,7 @@ const projects = [
       "A clarity-driven coaching and consulting site guiding individuals from drifting to driven, with strategy support for organizations ready to do more.",
     url: "https://browncoachingandconsulting.com",
     gradient: "from-amber-600/30 to-slate-900/30",
-    image: bloomBotanicalsImg,
+    image: brownCoachingImg,
     services: [
       "Custom Web Design",
       "Booking Integration",
