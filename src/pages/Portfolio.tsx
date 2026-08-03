@@ -14,17 +14,18 @@ import brownCoachingImg from "@/assets/portfolio/brown-coaching-consulting.png";
 
 const projects = [
   {
-    name: "Hurt Help Heal Initiative",
-    category: "Non-Profit • Community",
+    name: "Neva Meals",
+    category: "Catering • Events",
     description:
-      "A compassionate resource hub connecting individuals with counseling, support groups, and wellness programs for holistic healing.",
-    url: "https://hurthelphealinitiative.com/resources/",
-    gradient: "from-sky-500/30 to-cyan-700/30",
-    image: hurtHelpHealImg,
+      "A full-service catering and private chef experience by Chef Geneva Jeanty, featuring bold Haitian & Caribbean flavor for intimate dinners, weddings, corporate events, and wellness pop-ups.",
+    url: "https://nevameals.com",
+    gradient: "",
+    image: nevaMealsImg,
+    imageFit: "contain",
     services: [
       "Custom Web Design",
-      "Mobile App Integration",
-      "Donation Portal Setup",
+      "Online Booking System",
+      "Brand Identity",
       "SEO Optimization",
     ],
   },
@@ -89,18 +90,17 @@ const projects = [
     ],
   },
   {
-    name: "Neva Meals",
-    category: "Catering • Events",
+    name: "Hurt Help Heal Initiative",
+    category: "Non-Profit • Community",
     description:
-      "A full-service catering and private chef experience by Chef Geneva Jeanty, featuring bold Haitian & Caribbean flavor for intimate dinners, weddings, corporate events, and wellness pop-ups.",
-    url: "https://nevameals.com",
-    gradient: "",
-    image: nevaMealsImg,
-    imageFit: "contain",
+      "A compassionate resource hub connecting individuals with counseling, support groups, and wellness programs for holistic healing.",
+    url: "https://hurthelphealinitiative.com/resources/",
+    gradient: "from-sky-500/30 to-cyan-700/30",
+    image: hurtHelpHealImg,
     services: [
       "Custom Web Design",
-      "Online Booking System",
-      "Brand Identity",
+      "Mobile App Integration",
+      "Donation Portal Setup",
       "SEO Optimization",
     ],
   },
