@@ -96,6 +96,7 @@ const projects = [
     url: "https://nevameals.com",
     gradient: "from-amber-500/30 to-indigo-900/30",
     image: nevaMealsImg,
+    imageFit: "contain",
     services: [
       "Custom Web Design",
       "Online Booking System",
@@ -162,7 +163,9 @@ const Portfolio = () => {
                     src={project.image}
                     alt={`${project.name} website preview`}
                     loading="lazy"
-                    className={`absolute inset-0 w-full h-full object-cover object-top transition-transform duration-500 ${
+                    className={`absolute inset-0 w-full h-full ${
+                      project.imageFit === "contain" ? "object-contain" : "object-cover object-top"
+                    } transition-transform duration-500 ${
                       isLive ? "group-hover:scale-105" : ""
                     }`}
                   />
