@@ -52,7 +52,6 @@ const projects = [
     url: "https://ironcladbarbershop.example.com",
     gradient: "from-amber-500/30 to-zinc-800/30",
     image: barbershopImg,
-    frame: "black",
     services: [
       "Custom Web Design",
       "Online Booking System",
@@ -154,29 +153,21 @@ const Portfolio = () => {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: i * 0.08 }}
                 className={`group relative rounded-xl border ${
-                  project.frame === "black"
-                    ? "border-black"
-                    : project.gradient
-                    ? "border-border"
-                    : "border-white"
+                  project.gradient ? "border-border" : "border-white"
                 } bg-card overflow-hidden transition-colors duration-300 ${
                   isLive ? "hover:border-primary/40 cursor-pointer" : "cursor-default"
                 }`}
               >
                 <div
                   className={`relative aspect-[4/3] overflow-hidden ${
-                    project.frame === "black"
-                      ? "bg-black"
-                      : project.gradient
-                      ? `bg-gradient-to-br ${project.gradient}`
-                      : "bg-white"
+                    project.gradient ? `bg-gradient-to-br ${project.gradient}` : "bg-white"
                   }`}
                 >
                   <img
                     src={project.image}
                     alt={`${project.name} website preview`}
                     loading="lazy"
-                    className={`${project.frame ? "absolute inset-3" : "absolute inset-0 w-full h-full"} ${
+                    className={`absolute inset-0 w-full h-full ${
                       project.imageFit === "contain" ? "object-contain" : "object-cover object-top"
                     } transition-transform duration-500 ${
                       isLive ? "group-hover:scale-105" : ""
