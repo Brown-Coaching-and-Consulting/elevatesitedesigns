@@ -25,7 +25,7 @@ const tiers = [
   {
     icon: Rocket,
     name: "Launch Solution",
-    price: "Starting at $500",
+    price: "Starting at $300",
     blurb:
       "Perfect for startups, entrepreneurs, and small businesses establishing their online presence.",
     features: [
